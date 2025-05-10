@@ -1,0 +1,9 @@
+packages:
+  - name: chess_evaluator
+    shared: false
+    functions:
+      - name: evaluateMove
+        runtime: python:default # Or a specific Python version e.g., python:3.11
+        main: main # Specifies the entry point function in your __main__.py
+        # environment: # Optional: Define environment variables here
+          STOCKFISH_PATH: "./stockfish" # If bundled
